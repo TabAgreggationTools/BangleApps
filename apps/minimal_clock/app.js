@@ -112,8 +112,6 @@
   let MinuteHandLength = outerRadius * 0.7;
   let MinuteHandWidth  = 2*3, halfMinuteHandWidth = MinuteHandWidth/2;
 
-  let SecondHandLength = outerRadius * 0.9;
-  let SecondHandOffset = halfHourHandWidth + 10;
 
   let outerBoltRadius = halfHourHandWidth + 2, innerBoltRadius = outerBoltRadius - 4;
   let HandOffset = outerBoltRadius + 4;
@@ -170,11 +168,9 @@
 
     let Hours   = now.getHours() % 12;
     let Minutes = now.getMinutes();
-    let Seconds = now.getSeconds();
 
     let HoursAngle   = (Hours+(Minutes/60))/12 * twoPi - Pi;
     let MinutesAngle = (Minutes/60)            * twoPi - Pi;
-    let SecondsAngle = (Seconds/60)            * twoPi - Pi;
 
     g.setColor(g.theme.fg);
 
@@ -184,15 +180,7 @@
     transformPolygon(MinuteHandPolygon, CenterX,CenterY, MinutesAngle);
     g.fillPoly(transformedPolygon);
 
-    let sPhi = Math.sin(SecondsAngle), cPhi = Math.cos(SecondsAngle);
-
     g.setColor(g.theme.fg2);
-    g.drawLine(
-      CenterX + SecondHandOffset*sPhi,
-      CenterY - SecondHandOffset*cPhi,
-      CenterX - SecondHandLength*sPhi,
-      CenterY + SecondHandLength*cPhi
-    );
 
     g.setColor(g.theme.fg);
     g.fillCircle(CenterX,CenterY, outerBoltRadius);
@@ -212,7 +200,7 @@
 
     drawClockHands();
 
-    let Pause = 1000 - (Date.now() % 1000);
+    let Pause = 30000 - (Date.now() % 30000);
     Timer = setTimeout(refreshDisplay,Pause);
   }
 
