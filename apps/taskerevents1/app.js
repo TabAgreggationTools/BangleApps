@@ -1,7 +1,7 @@
 Bluetooth.println("");
 Bluetooth.println(JSON.stringify({
   t:"intent", 
-  target:"broadcast", 
+  target:"BroadcastReceiver", 
   action:"com.banglejs.uart.tx"
 }));
 
