@@ -1,7 +1,7 @@
 Bluetooth.println("");
 Bluetooth.println(JSON.stringify({
   t:"intent", 
-  target:"broadcast receiver", 
+  target:"broadcast", 
   action:"com.taskerevent.bangle.js"
 }));
 
