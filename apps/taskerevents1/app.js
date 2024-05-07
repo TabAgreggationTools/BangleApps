@@ -2,7 +2,7 @@ Bluetooth.println("");
 Bluetooth.println(JSON.stringify({
   t:"intent", 
   target:"broadcast", 
-  action:"com.taskerevent.bangle.js"
+  action:"com.banglejs.uart.tx"
 }));
 
 setTimeout(function() {
