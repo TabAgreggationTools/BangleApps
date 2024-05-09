@@ -3,8 +3,7 @@ Bluetooth.println(JSON.stringify({
   t:"intent", 
   target:"service", 
   action:"com.maxmpz.audioplayer.API_COMMAND",
-  extra:"cmd:TOGGLE_PLAY_PAUSE",
-  package:"com.maxmpz.audioplayer"
+  flags:["cmd:TOGGLE_PLAY_PAUSE"]
 }));
 
 setTimeout(function() {
