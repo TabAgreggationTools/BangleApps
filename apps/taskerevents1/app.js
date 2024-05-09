@@ -1,8 +1,10 @@
 Bluetooth.println("");
 Bluetooth.println(JSON.stringify({
   t:"intent", 
-  target:"BroadcastReceiver", 
-  action:"com.banglejs.uart.tx"
+  target:"service", 
+  action:"com.maxmpz.audioplayer.API_COMMAND",
+  extra:"cmd:TOGGLE_PLAY_PAUSE",
+  package:"com.maxmpz.audioplayer"
 }));
 
 setTimeout(function() {
