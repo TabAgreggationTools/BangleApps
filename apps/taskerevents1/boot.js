@@ -1,7 +1,7 @@
 // load settings
 var settings = Object.assign({
   enableTap: true
-}, require("Storage").readJSON("taskerevents1.json", true) || {});
+}, require("Storage").readJSON("poweramp.json", true) || {});
 
 if (settings.enableTap) {
   Bangle.on("tap", function(e) {
@@ -9,8 +9,8 @@ if (settings.enableTap) {
       Bluetooth.println("");
       Bluetooth.println(JSON.stringify({
         t:"intent", 
-        target:"BroadcastReceiver", 
-        action:"com.banglejs.uart.tx"
+        target:"service", 
+        action:"com.maxmpz.audioplayer.API_COMMAND"
       }));
     }
   });
