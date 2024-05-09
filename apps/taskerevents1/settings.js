@@ -1,6 +1,6 @@
 (function (back) {
   let storage = require('Storage');
-  let file = "taskerevents1.json";
+  let file = "poweramp.json";
 
   // Load and set default settings
   let appSettings = Object.assign({
@@ -15,7 +15,7 @@
   function showMenu() {
     E.showMenu({
       "": {
-        "title": "Tasker Events1"
+        "title": "PowerAmp"
       },
       "< Back": () => back(),
       'Front Tap:': {
