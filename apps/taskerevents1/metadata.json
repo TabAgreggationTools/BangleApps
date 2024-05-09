@@ -1,18 +1,18 @@
 {
-  "id": "taskerevents1",
-  "name": "Tasker Events1",
+  "id": "poweramp",
+  "name": "PowerAmp",
   "version": "0.01",
-  "description": "Sends an event that can reacted to by Tasker. Intents must be enabled in  Gadgetbridge.",
+  "description": "Play/pause PowerAmp. Intents must be enabled in  Gadgetbridge.",
   "icon": "app.png",
   "type": "app",
-  "tags": "tool, voice, tasker",
+  "tags": "tool, voice, tasker, PowerAmp",
   "supports": ["BANGLEJS","BANGLEJS2"],
   "allow_emulator": false,
   "storage": [
-    {"name":"taskerevents1.boot.js","url":"boot.js"},
-    {"name":"taskerevents1.app.js","url":"app.js"},
-    {"name":"taskerevents1.settings.js","url":"settings.js"},
-    {"name":"taskerevents1.img","url":"icon.js","evaluate":true}
+    {"name":"poweramp.boot.js","url":"boot.js"},
+    {"name":"poweramp.app.js","url":"app.js"},
+    {"name":"poweramp.settings.js","url":"settings.js"},
+    {"name":"poweramp.img","url":"icon.js","evaluate":true}
   ],
-  "data": [{"name":"taskerevents1.json"}]
+  "data": [{"name":"poweramp.json"}]
 }
