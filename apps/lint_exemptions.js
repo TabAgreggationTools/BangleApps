@@ -515,12 +515,6 @@ module.exports = {
       "no-undef"
     ]
   },
-  "apps/widbt_notify/widget.js": {
-    "hash": "16372ffcbc6bd1419ca326c7da40c2195f82a4bfceb6f123c15872624c4f0adf",
-    "rules": [
-      "no-undef"
-    ]
-  },
   "apps/widbgjs/widget.js": {
     "hash": "9852ce9aafb0a1ca3029d497282c8cdf07438ea36a3323313bad5b7569b1081b",
     "rules": [
@@ -1157,12 +1151,6 @@ module.exports = {
       "no-undef"
     ]
   },
-  "apps/banglebridge/widget.js": {
-    "hash": "4ee8d6749e1d0e28c58ad871fd9f6ccbca2d716bb4fbd3511ba4c34a6a5897e1",
-    "rules": [
-      "no-undef"
-    ]
-  },
   "apps/bad/bad.app.js": {
     "hash": "d1354613102818190dd4e6e28fd715db7dc4d51b8e618cae61a3135529cc97eb",
     "rules": [
@@ -1272,7 +1260,7 @@ module.exports = {
     ]
   },
   "apps/kineticscroll/boot.min.js": {
-    "hash": "1345b3c556f1a268a81c3a57825d096d9bbce9740217339aa6d79223d9daad4d",
+    "hash": "0814125a19aff5c608b9357926cd4a4c038334e31b0d07a70deefaf2c77959b9",
     "rules": [
       "no-cond-assign"
     ]
